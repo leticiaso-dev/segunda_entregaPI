@@ -1,1 +1,57 @@
+USE db_cadastros;
 
+-- Tabelas referenciadas
+CREATE TABLE Professores (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Alunos (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Fornecedores (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL
+);
+
+-- Tabela PessoaFisica3
+CREATE TABLE PessoaFisica (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    CPF CHAR(11) UNIQUE NOT NULL,
+    DataNascimento DATE,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
+
+-- Tabela RelacaoProfessorAluno
+CREATE TABLE RelacaoProfessorAluno (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    ProfessorId INT NOT NULL,
+    AlunoId INT NOT NULL,
+    FOREIGN KEY (ProfessorId) REFERENCES Professores(Id),
+    FOREIGN KEY (AlunoId) REFERENCES Alunos(Id)
+);
+
+-- Tabela Servicos
+CREATE TABLE Servicos (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    FornecedorId INT NOT NULL,
+    TipoServico VARCHAR(100) NOT NULL,
+    FOREIGN KEY (FornecedorId) REFERENCES Fornecedores(Id)
+);
+
+-- Tabela Pessoa (criada apenas uma vez)
+CREATE TABLE Pessoa (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Tipo ENUM('Fisica','Juridica') NOT NULL,
+    NomeRazaoSocial VARCHAR(150) NOT NULL,
+    Documento VARCHAR(14) UNIQUE NOT NULL, -- CPF ou CNPJ
+    DataNascimento DATE,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
