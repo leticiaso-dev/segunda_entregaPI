@@ -1,0 +1,102 @@
+
+CREATE DATABASE IF NOT EXISTS SistemaCadastros
+  DEFAULT CHARACTER SET utf8mb4
+  DEFAULT COLLATE utf8mb4_unicode_ci;
+
+USE SistemaCadastros;
+
+DROP TABLE IF EXISTS RelacaoProfessorAluno;
+DROP TABLE IF EXISTS Servicos;
+DROP TABLE IF EXISTS Fornecedores;
+DROP TABLE IF EXISTS Alunos;
+DROP TABLE IF EXISTS Professores;
+DROP TABLE IF EXISTS PessoaJuridica;
+DROP TABLE IF EXISTS PessoaFisica;
+
+CREATE TABLE PessoaFisica (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    CPF CHAR(11) UNIQUE NOT NULL,
+    DataNascimento DATE,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
+CREATE TABLE PessoaJuridica (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    RazaoSocial VARCHAR(150) NOT NULL,
+    CNPJ CHAR(14) UNIQUE NOT NULL,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
+CREATE TABLE Professores (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    CPF CHAR(11) UNIQUE NOT NULL,
+    DataNascimento DATE,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
+CREATE TABLE Alunos (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    CPF CHAR(11) UNIQUE NOT NULL,
+    DataNascimento DATE,
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
+
+CREATE TABLE Fornecedores (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    RazaoSocial VARCHAR(150) NOT NULL,
+    CPFCNPJ VARCHAR(14) UNIQUE NOT NULL,
+    TipoServico VARCHAR(100),
+    Telefone VARCHAR(20),
+    Email VARCHAR(100),
+    Endereco VARCHAR(200)
+);
+CREATE TABLE RelacaoProfessorAluno (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    ProfessorId INT NOT NULL,
+    AlunoId INT NOT NULL,
+    FOREIGN KEY (ProfessorId) REFERENCES Professores(Id),
+    FOREIGN KEY (AlunoId) REFERENCES Alunos(Id)
+);
+
+CREATE TABLE Servicos (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    FornecedorId INT NOT NULL,
+    TipoServico VARCHAR(100) NOT NULL,
+    FOREIGN KEY (FornecedorId) REFERENCES Fornecedores(Id)
+);
+-- Pessoa Jurídica 
+INSERT INTO PessoaJuridica (RazaoSocial, CNPJ, Telefone, Email, Endereco)
+VALUES ('Ads Group', '12150124700210', '22 992464670', 'contato@adsgroup.com', 'Rua Manoel Torres, nº 151 Loja');
+
+-- Pessoas Físicas
+INSERT INTO PessoaFisica (Nome, CPF, DataNascimento, Telefone, Email, Endereco)
+VALUES 
+('Maria Oliveira', '12345678901', '1990-04-12', '21 98888-1111', 'maria.oliveira@email.com', 'Rua das Acácias, 45'),
+('Carlos Mendes', '98765432100', '1985-09-30', '21 97777-2222', 'carlos.mendes@email.com', 'Av. Brasil, 200'),
+('Fernanda Souza', '45678912300', '1995-01-20', '21 96666-3333', 'fernanda.souza@email.com', 'Rua das Flores, 78');
+
+-- Professores
+INSERT INTO Professores (Nome, CPF, DataNascimento, Telefone, Email, Endereco)
+VALUES 
+('Ana Lima', '11122233344', '1978-07-15', '21 95555-4444', 'ana.lima@escola.com', 'Rua Central, 10'),
+('Roberto Silva', '55566677788', '1980-02-25', '21 94444-5555', 'roberto.silva@escola.com', 'Av. Atlântica, 300');
+
+-- Alunos
+INSERT INTO Alunos (Nome, CPF, DataNascimento, Telefone, Email, Endereco)
+VALUES 
+('Pedro Santos', '99988877766', '2002-05-10', '21 93333-6666', 'pedro.santos@aluno.com', 'Rua Nova, 12'),
+('Juliana Costa', '22233344455', '2003-11-22', '21 92222-7777', 'juliana.costa@aluno.com', 'Rua das Palmeiras, 34');
+
+-- Relacionamento Professores /  Alunos
+INSERT INTO RelacaoProfessorAluno (ProfessorId, AlunoId)
+VALUES 
+(1, 1), -- Ana Lima -> Pedro Santos
+(2, 2); -- Roberto Silva -> Juliana Costa
