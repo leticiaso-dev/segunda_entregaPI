@@ -1,4 +1,4 @@
-#  ProjetoIntegrador: Desenvolvimeto de sistemas orientado à objetos
+#  Projeto Integrador: Desenvolvimeto de sistemas orientado à objetos
 # 🧩 Sistema de Cadastros
 
 Este projeto apresenta o **protótipo funcional** de um sistema de cadastros, desenvolvido como parte da disciplina de **Análise e Desenvolvimento de Sistemas**.  
