@@ -11,12 +11,13 @@ Você pode acessar o protótipo interativo pelo link abaixo:
 👉 [Clique aqui para abrir o protótipo no Miro](https://miro.com/app/board/uXjVJsElU94=/)
 
 e também encontra-se disponível na pasta 
-[📄 Abrir Protótipo - Sistema de Cadastros](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/Prot%C3%B3tipo%20-%20Sistema%20de%20Cadastros.pdf)
+[📄 Abrir Protótipo -Sistema de Cadastros](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/Prot%C3%B3tipo%20-%20Sistema%20de%20Cadastros.pdf)
 
 
 ## Modelo de Dados (Banco SQL)
 O modelo de dados do sistema foi desenvolvido com base na modelagem UML da Fase 1.  
-Os scripts e diagramas estão disponíveis na pasta [📄 Abrir modelo_dados] (https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/modelo_dados).
+Os scripts e diagramas estão disponíveis na pasta 
+[📂 Acessar pasta modelo_dados](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/modelo_dados)
 
 ## 📐 Modelagem e Análise (Fase 1)
 
