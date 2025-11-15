@@ -28,7 +28,7 @@ Abaixo estão os artefatos de modelagem que serviram como base para os protótip
 O Diagrama de Casos de Uso detalha todas as funcionalidades do sistema, sendo o ponto de partida para a prototipação das interfaces de Cadastro.
 
 O Diagrama de Classes, essencial para a orientação a objetos, define as estruturas de dados (classes e atributos) que serão utilizadas. **Os campos de cada protótipo refletem os atributos definidos nas respectivas classes.**
-[📄 Ver Diagramas](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/Diagramas)
+[📄 Ver Diagramas](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/diagramas.pdf)
 
 
 ## 👥 Equipe de desenvolvimento
