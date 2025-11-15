@@ -11,7 +11,7 @@ Você pode acessar o protótipo interativo pelo link abaixo:
 👉 [Clique aqui para abrir o protótipo no Miro](https://miro.com/app/board/uXjVJsElU94=/)
 
 e também encontra-se disponível na pasta 
-[📄 Abrir Protótipo - Sistema de Cadastros](Files/Protótipo_-_Sistema_de_Cadastros.pdf)
+[📄 Abrir Protótipo - Sistema de Cadastros](https://github.com/SEU-USUARIO/SEU-REPOSITORIO/blob/main/Files/Protótipo-Sistema_de_Cadastros.pdf)
 
 ## Modelo de Dados (Banco SQL)
 O modelo de dados do sistema foi desenvolvido com base na modelagem UML da Fase 1.  
