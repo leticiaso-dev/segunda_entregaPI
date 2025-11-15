@@ -18,7 +18,8 @@ e também encontra-se disponível na pasta
 O modelo de dados do sistema foi desenvolvido com base na modelagem UML da Fase 1.  
 Os scripts e diagramas estão disponíveis nas pastas: 
 [📂 Acessar pasta modelo_dados](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/modelo_dados)
-[📂 Acessar pasta modelo_dados]([https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/modelo_dados](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/projeto%20PTI%202%20fase%20(4).sql))
+[📂 Acessar pasta projeto PI 2 fase.sql](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/projeto%20PTI%202%20fase%20(4).sql)
+[📂 Acessar pasta sql_cadastros.sql](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/sql_cadastros.sql)
 
 ## 📐 Modelagem e Análise (Fase 1)
 
