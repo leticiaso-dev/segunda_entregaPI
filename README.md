@@ -21,7 +21,7 @@ Os scripts e diagramas estão disponíveis na pasta
 
 ## 📐 Modelagem e Análise (Fase 1)
 
-Abaixo estão os artefatos de modelagem que serviram como base para os protótipos da Fase 2. Os diagramas originais em alta resolução estão armazenados na pasta `/modelagem` deste repositório.
+Abaixo estão os artefatos de modelagem que serviram como base para os protótipos da Fase 2.
 
 #### Diagrama de Casos de Uso e Diagrama de Classes
 
