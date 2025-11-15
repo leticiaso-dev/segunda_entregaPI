@@ -16,7 +16,7 @@ e também encontra-se disponível na pasta
 
 ## Modelo de Dados (Banco SQL)
 O modelo de dados do sistema foi desenvolvido com base na modelagem UML da Fase 1.  
-Os scripts e diagramas estão disponíveis na pasta /modelo_dados deste repositório.---
+Os scripts e diagramas estão disponíveis na pasta (https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/modelo_dados).
 
 ## 📐 Modelagem e Análise (Fase 1)
 
