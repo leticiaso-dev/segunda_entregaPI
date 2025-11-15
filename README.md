@@ -11,7 +11,7 @@ Você pode acessar o protótipo interativo pelo link abaixo:
 👉 [Clique aqui para abrir o protótipo no Miro](https://miro.com/app/board/uXjVJsElU94=/)
 
 e também encontra-se disponível na pasta 
-[📄 Abrir Protótipo - Sistema de Cadastros](COLE_AQUI_O_LINK_COPIADO)
+[📄 Abrir Protótipo - Sistema de Cadastros](https://github.com/leticiaso-dev/segunda_entregaPI/blob/main/Prot%C3%B3tipo%20-%20Sistema%20de%20Cadastros.pdf)
 
 
 ## Modelo de Dados (Banco SQL)
