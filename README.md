@@ -23,17 +23,13 @@ Os scripts e diagramas estão disponíveis na pasta
 
 Abaixo estão os artefatos de modelagem que serviram como base para os protótipos da Fase 2. Os diagramas originais em alta resolução estão armazenados na pasta `/modelagem` deste repositório.
 
-#### Diagrama de Casos de Uso
+#### Diagrama de Casos de Uso e Diagrama de Classes
 
 O Diagrama de Casos de Uso detalha todas as funcionalidades do sistema, sendo o ponto de partida para a prototipação das interfaces de Cadastro.
 
-![Diagrama de Casos de Uso do Sistema](modelagem/diagrama_casos_de_uso.png)
-
-#### Diagrama de Classes
-
 O Diagrama de Classes, essencial para a orientação a objetos, define as estruturas de dados (classes e atributos) que serão utilizadas. **Os campos de cada protótipo refletem os atributos definidos nas respectivas classes.**
+[📄 Ver Diagramas](https://github.com/ThamyresTatikawa/segunda_entregaPI/blob/main/diagramas/NOME_DO_ARQUIVO.pdf)
 
-![Diagrama de Classes do Sistema](modelagem/diagrama_classes.png)
 
 ## 👥 Equipe de desenvolvimento
 
