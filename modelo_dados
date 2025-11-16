@@ -1,4 +1,5 @@
-
+--Tabelas Do Prototipo DE Cadastro de Dados
+--PTI 2 fase
 CREATE DATABASE IF NOT EXISTS SistemaCadastros
   DEFAULT CHARACTER SET utf8mb4
   DEFAULT COLLATE utf8mb4_unicode_ci;
